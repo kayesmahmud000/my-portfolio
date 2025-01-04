@@ -4,6 +4,7 @@ import { Link } from 'react-scroll'; // Import Link from react-scroll
 import { useTheme } from '../context/ThemeProvider';
 import { MdLightMode } from "react-icons/md";
 import { CiDark } from 'react-icons/ci';
+import { TiThMenu } from 'react-icons/ti';
 
 const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
@@ -12,25 +13,17 @@ const Navbar = () => {
         <div>
             {/* Navbar Container */}
             <div className="navbar fixed bg-opacity-40 z-50 max-w-7xl mx-auto">
-                <div className="navbar-start">
+                <div className="navbar-start" ata-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-duration="3000">
                     {/* Mobile Menu */}
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                            
+                        <TiThMenu size={20} />
                         </div>
                         {/* Mobile Dropdown Links with Smooth Scrolling */}
-                        <ul className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <ul className="menu menu-sm dropdown-content rounded-box z-[1]   p-2 shadow">
                         {["about", "skills", "project", "contact"].map((section) => (
                                 <li key={section} className="text-lg font-semibold">
                                     <Link
@@ -48,14 +41,19 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* Logo */}
-                  <Link to='hero'smooth={true}
+                <div>
+                <Link to='hero'smooth={true}
                                         duration={500}
-                                        offset={-80} >
-                  <h1 className='text-3xl font-bold text-primary hover:text-accent'>Kayes</h1></Link>
+                                        offset={-80} 
+                                        >
+                  <h1  className='text-3xl font-bold text-primary cursor-pointer hover:text-accent'>Kayes</h1></Link>
+                </div>
                 </div>
 
                 {/* Navbar Center Links with Smooth Scrolling */}
-                <div className="navbar-end gap-6">
+                <div className="navbar-end gap-6" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-duration="3000">
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu gap-3 menu-horizontal px-1">
                             {/* Theme Toggle Button */}
