@@ -36,8 +36,8 @@ const Contact = () => {
             <div className="text-center  ">
                     <h3 className="text-3xl font-bold mb-4">Contact Me </h3>
                     <p className='flex items-center gap-3 '><SlEnvolope></SlEnvolope> Email: <a href="mailto:kayesmahmud2220@gmail.com" className=" underline hover:text-accent"> kayesmahmud2220@gmail.com</a></p>
-                    <p className='flex items-center gap-3 ' ><IoCall /> Phone: <a href="tel:+8801234567890" className="hover:text-accent">+8801892549812</a></p>
-                    <p className='flex items-center gap-3 ' ><FaWhatsapp></FaWhatsapp> WhatsApp: <a href="https://wa.me/8801234567890" target="_blank" rel="noopener noreferrer" className="hover:text-accent">+8801729527377</a></p>
+                    <p className='flex items-center gap-3 ' ><IoCall /> Phone: <a href="tel:+8801892549812" className="hover:text-accent">+8801892549812</a></p>
+                    <p className='flex items-center gap-3 ' ><FaWhatsapp></FaWhatsapp> WhatsApp: <a href="https://wa.me/8801729527377" target="_blank" rel="noopener noreferrer" className="hover:text-accent">+8801729527377</a></p>
                 </div>
                 <div className="card my-10 justify-center   w-full mx-auto  max-w-xl shadow-2xl">
                         <form ref={form} onSubmit={sendEmail} className="card-body">

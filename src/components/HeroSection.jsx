@@ -17,7 +17,7 @@ const HeroSection = () => {
             <p className="mt-4 text-lg font-bold"> 
             I'm a
             <Typewriter
-            words={[" Web Developer", " Frontend Developer", " Full Stack Developer"]}
+            words={[" Web Developer", " Frontend Developer", " MERN Stack Developer"]}
             loop={5}
             cursor
             cursorStyle='_'
