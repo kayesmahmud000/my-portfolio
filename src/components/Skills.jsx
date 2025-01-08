@@ -1,18 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
-const sk=[
-    { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-{ name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-{ name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-{ name: 'Tailwind CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg' }, // Fixed Tailwind Logo
-{ name: 'Express', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
-{ name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-{ name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
-{ name: 'HTML', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
-{ name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' }
-]  
-
 const skills = [
     { 
         name: 'React', 
@@ -113,7 +101,7 @@ const Skills = () => {
             <div className="w-full bg-gray-700 rounded-full h-3 mt-4">
               <div 
                 className="bg-blue-500 h-3 rounded-full transition-all duration-500"
-                style={{ width: `${skill.level}%` }}
+                style={{ width: `${skill.progressBar}%` }}
               ></div>
             </div>
             <p className="text-sm text-gray-400 mt-2">{skill.progressBar}% Proficiency</p>

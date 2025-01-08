@@ -8,11 +8,12 @@ import { TiThMenu } from 'react-icons/ti';
 
 const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
+    
 
     return (
         <div>
             {/* Navbar Container */}
-            <div className="navbar fixed bg-opacity-40 z-50 max-w-7xl mx-auto">
+            <div className="navbar fixed   bg-opacity-40 z-50 max-w-7xl mx-auto">
                 <div className="navbar-start" ata-aos="fade-right"
      data-aos-offset="300"
      data-aos-duration="3000">
@@ -23,21 +24,27 @@ const Navbar = () => {
                         <TiThMenu size={20} />
                         </div>
                         {/* Mobile Dropdown Links with Smooth Scrolling */}
-                        <ul className="menu menu-sm dropdown-content rounded-box z-[1]   p-2 shadow">
-                        {["about", "skills", "project", "contact"].map((section) => (
-                                <li key={section} className="text-lg font-semibold">
+                        <ul className="menu menu-md dropdown-content rounded-box z-[1]   p-2 shadow">
+                            <li><a href="#about"> About</a></li>
+                            <li><a href="#skills"> Skills</a></li>
+                            <li><a href="#education"> Education</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact"> Contract</a></li>
+                        {/* {["about", "skills", "project", "project"].map((section) => (
+                                <li key={section} className="text-xl font-semibold">
+                                    <a href={section}></a>
                                     <Link
                                         to={section}
                                         smooth={true}
                                         duration={500}
-                                        offset={-80}
+                                        offset={-90}
                                         activeClass="  font-bold underline"
                                         className="hover:text-accent"
                                     >
                                         {section.charAt(0).toUpperCase() + section.slice(1)}
                                     </Link>
                                 </li>
-                            ))}
+                            ))} */}
                         </ul>
                     </div>
                     {/* Logo */}
@@ -63,13 +70,13 @@ const Navbar = () => {
                                 </button>
                             </li>
                             {/* Smooth Scrolling Links */}
-                            {["about", "skills", "project", "contact"].map((section) => (
+                            {["about", "skills","education","project", "contact"].map((section) => (
                                 <li key={section} className="text-lg font-semibold">
                                     <Link
                                         to={section}
                                         smooth={true}
                                         duration={500}
-                                        offset={-80}
+                                        offset={-90}
                                         activeClass="  font-bold underline"
                                         className="hover:text-accent"
                                     >
@@ -83,10 +90,10 @@ const Navbar = () => {
                     <div>
                         <a
                             href="https://docs.google.com/document/d/1EeKdNe7IPZBzDiGExwJK6V71rpbo07b33qT2UNhPjd0/edit?tab=t.0" target='_blank'
-                            className="btn btn-md border-none inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-accent"
+                            className="btn   btn-md border-none inline-block px-6 pt-4 bg-primary text-white rounded-lg hover:bg-accent"
                             download
                         >
-                            📥 Download Resume
+                             Resume
                         </a>
                     </div>
                 </div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import photo from '../assets/Untitled-2.png'
+import photo from '../assets/hero.jpg'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
     return (
-        <section id='hero' className="  text-center px-5 py-20 ">
+        <section id='hero' className="  text-center px-5 py-16 ">
            <div className='flex flex-col-reverse lg:flex-row gap-5 items-center lg:justify-around '>
            <div className='lg:text-right '  data-aos="fade-right"
      data-aos-offset="300"
@@ -43,7 +43,7 @@ const HeroSection = () => {
            <div  data-aos="fade-left"
      data-aos-offset="300"
      data-aos-duration="3000">
-           <img src={photo} className='lg:h-[400px]  rounded-lg'  alt="" />
+           <img src={photo} className='lg:h-[400px] mt-10 mb-5 rounded-full'  alt="" />
            </div>
            </div>
            

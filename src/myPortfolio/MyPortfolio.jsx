@@ -1,6 +1,7 @@
 
 import About from "../components/About";
 import Contact from "../components/Contact";
+import EducationalQualification from "../components/EducationalQualification";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
@@ -28,6 +29,10 @@ const MyPortfolio = () => {
            <div className="border-t border-gray-300 my-4"></div>
            <section>
             <Skills></Skills>
+           </section>
+           <div className="border-t border-gray-300 my-4"></div>
+           <section>
+            <EducationalQualification></EducationalQualification>
            </section>
            <div className="border-t border-gray-300 my-4"></div>
            <section>

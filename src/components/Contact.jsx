@@ -2,6 +2,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
+import { SlEnvolope } from 'react-icons/sl';
+import {  FaWhatsapp } from 'react-icons/fa';
+import { IoCall } from 'react-icons/io5';
 
 const Contact = () => {
     const form = useRef();
@@ -28,33 +31,34 @@ const Contact = () => {
     return (
         <div id='contact' className='flex flex-col '  data-aos="fade-up"
         data-aos-duration="3000">
-            <h2 className="text-4xl font-bold text-center py-10 text-primary hover:text-accent">Contact Me</h2>
-            <p className='text-center '>Have a question or want to work together? Leave your details and <br />I'll get back to you as soon as possible.</p>
-            <div className="card my-10 justify-center   w-full mx-auto  max-w-xl shadow-2xl">
+            <h2 className="text-4xl font-bold text-center py-10 text-primary hover:text-accent">Contact</h2>
+            <div className='flex  flex-col-reverse lg:flex-row items-center'>
+            <div className="text-center  ">
+                    <h3 className="text-3xl font-bold mb-4">Contact Me </h3>
+                    <p className='flex items-center gap-3 '><SlEnvolope></SlEnvolope> Email: <a href="mailto:kayesmahmud2220@gmail.com" className=" underline hover:text-accent"> kayesmahmud2220@gmail.com</a></p>
+                    <p className='flex items-center gap-3 ' ><IoCall /> Phone: <a href="tel:+8801234567890" className="hover:text-accent">+8801892549812</a></p>
+                    <p className='flex items-center gap-3 ' ><FaWhatsapp></FaWhatsapp> WhatsApp: <a href="https://wa.me/8801234567890" target="_blank" rel="noopener noreferrer" className="hover:text-accent">+8801729527377</a></p>
+                </div>
+                <div className="card my-10 justify-center   w-full mx-auto  max-w-xl shadow-2xl">
                         <form ref={form} onSubmit={sendEmail} className="card-body">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-white">Name</span>
+                                    <span className="label-text ">Name</span>
                                 </label>
                                 <input type="text" placeholder="Name" name='from_name' className="input input-bordered text-black" />
                             </div>
-                            <div className="form-control lg:gap-2 lg:flex-row">
-                                <div className="lg:w-1/2">
+                            <div className="form-control">
+                                <div className="">
                                     <label className="label">
-                                        <span className="label-text text-white">Email</span>
+                                        <span className="label-text">Email</span>
                                     </label>
                                     <input type="email" placeholder="Email" name='from_email' className="input text-black w-full input-bordered" />
                                 </div>
-                                <div className="lg:w-1/2">
-                                    <label className="label">
-                                        <span className="label-text text-white">Mobile</span>
-                                    </label>
-                                    <input type="text" placeholder="Mobile" name='from_mobile' className="input w-full input-bordered text-black" />
-                                </div>
+                              
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-white">Comments/ Questions</span>
+                                    <span className="label-text ">Comments/ Questions</span>
                                 </label>
                                 <textarea name='massage' className="textarea text-black textarea-bordered " rows={5} placeholder="Your Massage"></textarea>
                             </div>
@@ -63,6 +67,9 @@ const Contact = () => {
                             </div>
                         </form>
                     </div>
+            </div>
+           
+           
         </div>
     );
 };
