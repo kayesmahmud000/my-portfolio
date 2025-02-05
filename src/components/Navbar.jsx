@@ -89,7 +89,7 @@ const Navbar = () => {
                     {/* Download Resume Button */}
                     <div>
                         <a
-                            href="https://docs.google.com/document/d/1EeKdNe7IPZBzDiGExwJK6V71rpbo07b33qT2UNhPjd0/edit?tab=t.0" target='_blank'
+                            href="https://drive.google.com/file/d/11ROd-De8Avj0HDQLLqn0sOSqU9Z9IQSt/view?usp=sharing" target='_blank'
                             className="btn   btn-md border-none inline-block px-6 pt-4 bg-primary text-white rounded-lg hover:bg-accent"
                             download
                         >

@@ -29,7 +29,7 @@ const Contact = () => {
         );
     };
     return (
-        <div id='contact' className='flex flex-col '  data-aos="fade-up"
+        <div id='contact' className='flex flex-row lg:flex-col '  data-aos="fade-up"
         data-aos-duration="3000">
             <h2 className="text-4xl font-bold text-center py-10 text-primary hover:text-accent">Contact</h2>
             <div className='flex  flex-col-reverse lg:flex-row items-center'>

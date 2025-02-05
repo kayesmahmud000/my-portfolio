@@ -15,7 +15,7 @@ const Footer = () => {
                    <div className='hover:text-accent'><a href="https://www.facebook.com/mah.mud.473648" target='_blank'><FaFacebook size={20}></FaFacebook></a></div>
                    <div className='hover:text-accent'><a href="https://github.com/kayesmahmud000" target='_blank'><FaGithub size={20}></FaGithub></a></div>
                    <div className='hover:text-accent'><a href="https://www.instagram.com/_m_a_h_m_u_d_2_/" target='_blank'><FaInstagram size={20}></FaInstagram></a></div>
-                   <div className='hover:text-accent'> <FaLinkedin size={20}></FaLinkedin></div>
+                   <div className='hover:text-accent'><a href="https://www.linkedin.com/in/kayes-mah/" target='_blank'> <FaLinkedin size={20}></FaLinkedin></a> </div>
                </div>
   </nav>
   <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

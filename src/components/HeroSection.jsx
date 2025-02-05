@@ -17,7 +17,7 @@ const HeroSection = () => {
             <p className="mt-4 text-lg font-bold"> 
             I'm a
             <Typewriter
-            words={[" Web Developer", " Frontend Developer", " MERN Stack Developer"]}
+            words={[" Web Developer", " Frontend Developer"]}
             loop={5}
             cursor
             cursorStyle='_'
@@ -33,7 +33,7 @@ const HeroSection = () => {
                 <div className='hover:text-accent'><a href="https://www.linkedin.com/in/kayes-mah/" target='_blank'><FaLinkedin size={20}></FaLinkedin></a> </div>
             </div>
             <a
-                href="https://docs.google.com/document/d/1EeKdNe7IPZBzDiGExwJK6V71rpbo07b33qT2UNhPjd0/edit?tab=t.0" target='_blank'
+                href="https://drive.google.com/file/d/11ROd-De8Avj0HDQLLqn0sOSqU9Z9IQSt/view?usp=sharing" target='_blank'
                 className="mt-6 inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-accent"
                 download
             >
